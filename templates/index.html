@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Role Candidate Screening</title>
+    <link rel="stylesheet" href="static/style.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+    <div class="container">
+        <h1>AI Role Candidate Screening</h1>
+        <form id="candidateForm">
+            <h2>Interview Questions</h2>
+
+            <div class="form-group">
+                <label for="technical">{{ questions['technical'] }}</label>
+                <textarea id="technical" name="technical" rows="4" required></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="problem_solving">{{ questions['problem_solving'] }}</label>
+                <textarea id="problem_solving" name="problem_solving" rows="4" required></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="soft_skills">{{ questions['soft_skills'] }}</label>
+                <textarea id="soft_skills" name="soft_skills" rows="4" required></textarea>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="static/script.js"></script>
+</body>
+</html>
